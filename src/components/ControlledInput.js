@@ -1,6 +1,7 @@
 // Code ControlledInput Component Here
 import React, { Component } from 'react';
 
+
 export default class ControlledInput extends Component {
 	constructor() {
 		super();
@@ -21,7 +22,7 @@ export default class ControlledInput extends Component {
 	handleLastNameChange = e => {
 		this.setState({
 			lastName: e.target.value
-		})	
+		})
 	}
 
 	handleSubmit = (e) => {
@@ -34,11 +35,11 @@ export default class ControlledInput extends Component {
 	render() {
 		return(
 			<form onSubmit={event => this.handleSubmit(event)}>
-				<input type="text" name="firstName" 
-				onChange={e => this.handleFirstNameChange(e)} 
+				<input type="text" name="firstName"
+				onChange={e => this.handleFirstNameChange(e)}
 				value={this.state.firstName} />
-				<input type="text" name="lastName" 
-				onChange={e => this.handleLastNameChange(e)} 
+				<input type="text" name="lastName"
+				onChange={e => this.handleLastNameChange(e)}
 				value={this.state.lastName} />
 				<input type="submit" value="Submit" />
 			</form>
