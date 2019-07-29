@@ -1,6 +1,7 @@
 // Code ControlledInput Component Here
 import React, { Component } from 'react';
 
+<<<<<<< HEAD
 export default class ControlledInput extends Component {
 	constructor() {
 		super();
@@ -45,3 +46,10 @@ export default class ControlledInput extends Component {
 			);
 	}
 }
+=======
+export default class Controlledinput extends Component {
+  constructor() {
+    super();
+  }
+}
+>>>>>>> afa7fa03428fdaede23e3a1fb2998dd64768de05
